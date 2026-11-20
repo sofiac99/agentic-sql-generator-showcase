@@ -1,0 +1,9 @@
+[
+  {"question": "Show monthly GMV and payment success rate", "required_tables": ["monthly_performance"], "required_columns": ["month", "gmv", "payment_success_rate"]},
+  {"question": "Compare payment success by acquisition channel", "required_tables": ["monthly_performance", "merchants"], "required_columns": ["acquisition_channel", "payment_success_rate"]},
+  {"question": "Which merchant segment is growing fastest?", "required_tables": ["monthly_performance", "merchants"], "required_columns": ["segment", "growth_pct"]},
+  {"question": "Which merchants should the account team prioritize?", "required_tables": ["monthly_performance", "merchants"], "required_columns": ["merchant_name", "risk_tier", "gmv"]},
+  {"question": "Show monthly booking conversion trend", "required_tables": ["behavior_daily"], "required_columns": ["month", "conversion_rate"]},
+  {"question": "Rank categories by engagement and bookings", "required_tables": ["behavior_daily"], "required_columns": ["category", "engagement_rate", "bookings"]}
+]
+
